@@ -4,7 +4,11 @@ import { ContainerScroll } from "@/components/global/container-scroll-animation"
 // import { div } from "framer-motion/client";
 import { Button } from "@/components/ui/button";
 import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
+import { products } from "@/lib/constant";
 import { clients } from "@/lib/constant";
+import { HeroParallax } from "@/components/global/connect-parallax";
+import { LampComponent } from "@/components/global/lamp";
+// import { Lamp } from "lucide-react";
 export default function Home() {
   return (
     <main>
@@ -32,7 +36,18 @@ export default function Home() {
             children={<p>Your content here</p>} />
         </div>
       </section>
-      <InfiniteMovingCards items={clients} />
+      <InfiniteMovingCards
+        className="md:mt-[18rem] mt-[-100px]"
+        items={clients}
+        direction="right"
+        speed="slow"
+      />
+      <section>
+        <HeroParallax products={products}></HeroParallax>
+      </section>
+      <section>
+        <LampComponent />
+      </section>
     </main>
   );
 }
