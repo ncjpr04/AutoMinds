@@ -11,13 +11,13 @@ backdrop-blur-lg z-[100] flex items-center border-b-[1px]
 border-neutral-900 justify-between">
 
             <aside className="flex items-center gap-[2px]">
-                <p className='text-3xl font-bold'>Fu</p>
+                <p className='text-3xl font-bold'>Auto</p>
                 <Image src="/fuzzieLogo.png"
                     alt="logo"
                     width={15}
                     height={15}
                     className='shadow-sm' />
-                <p className='text-3xl font-bold' >zie</p>
+                <p className='text-3xl font-bold' >Minds</p>
             </aside>
             <nav className='absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%] hidden md:block'>
                 <ul className='flex items-center gap-4 list-none'>

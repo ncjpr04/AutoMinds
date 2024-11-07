@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/providers/theme-provider"
 const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fuzzie",
-  description: "Automate Your Work With Fuzzie",
+  title:"AutoMinds",
+  description: "Automate Your Work With AutoMinds",
 };
 
 export default function RootLayout({
