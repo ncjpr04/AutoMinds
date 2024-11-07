@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { MenuIcon } from 'lucide-react'
 MenuIcon
 type Props = {}
-
 const Navbar = (props: Props) => {
     return (
         <header className="fixed right-0 left-0 top-0 py-4 px-4 bg-black/40
