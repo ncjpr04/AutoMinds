@@ -13,6 +13,7 @@ import clsx from 'clsx'
 import { Separator } from '@/components/ui/separator'
 import { Database, GitBranch, LucideMousePointerClick } from 'lucide-react'
 import { ModeToggle } from '../global/mode-toggle'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -20,13 +21,17 @@ const MenuOptions = (props: Props) => {
     const pathName = usePathname()
 
     return (
-        <nav className=" dark:bg-black h-screen overflow-auto  justify-between flex items-center flex-col  gap-10 py-6 px-2">
+        <nav className=" dark:bg-black h-screen  overflow-auto  justify-between flex items-center flex-col  gap-10 py-6 px-2">
             <div className="flex items-center  justify-center flex-col gap-8">
                 <Link
                     className="flex font-bold flex-row "
                     href="/"
                 >
-                    AutoMinds.
+                     <Image src="/fuzzieLogo.png"
+                    alt="logo"
+                    width={15}
+                    height={15}
+                    className='shadow-sm' />
                 </Link>
                 <TooltipProvider>
                     {menuOptions.map((menuItem) => (
@@ -91,7 +96,7 @@ const MenuOptions = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-center flex-col gap-8">
+            <div className="absolute bottom-4 left-[0.7rem] flex items-center justify-center flex-col gap-8">
                 <ModeToggle />
             </div>
         </nav>
