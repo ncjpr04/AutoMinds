@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { MenuIcon } from 'lucide-react'
+import { UserButton } from '@clerk/nextjs'
 MenuIcon
 type Props = {}
 const Navbar = (props: Props) => {
@@ -51,6 +52,7 @@ border-neutral-900 justify-between">
                         {false ? "Dashboard" : "Get Started"}
                     </span>
                     {/* WIP: Wire up user */}
+                    <UserButton/>
                 </Link>
                 <MenuIcon className='md:hidden'/>
 

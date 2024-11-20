@@ -5,7 +5,7 @@ export default function middleware(req: any, event: any) {
   const url = req.nextUrl.pathname;
 
   // Define public routes and ignored routes
-  const publicRoutes = ['/', '/api/clerk-webhook', '/api/drive-activity/notification', '/api/payment/success'];
+  const publicRoutes = ['/', '/api/clerk-webhook', '/api/drive-activity/notification'];
   const ignoredRoutes = [
     '/api/auth/callback/discord',
     '/api/auth/callback/notion',
